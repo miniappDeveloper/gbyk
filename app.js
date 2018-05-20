@@ -35,6 +35,9 @@ let app = {
         url: '/pages/auth/auth'
       })
     }
+  },
+  getUserinfo: function() {
+    return wx.getStorageSync(USERINFOKEY)
   }
 };
 

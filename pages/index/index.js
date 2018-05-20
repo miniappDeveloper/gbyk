@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    userInfo: app.globalData.userInfo,
+    userInfo: wx.getStorageSync(app.globalData.userInfoKey),
     hasUserInfo: app.globalData.hasUserInfo,
     imgUrls: [
       'http://img.zcool.cn/community/011d455af2e4c7a80121604526b480.jpg@1280w_1l_2o_100sh.jpg',
@@ -23,7 +23,9 @@ Page({
     })
   },
   onLoad: function () {
-    console.log(wx.getStorageSync(app.globalData.userInfoKey))
+    this.setData({
+      userInfo: app.getUserinfo()
+    })
   },
 })
 
