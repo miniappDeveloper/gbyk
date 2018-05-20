@@ -34,6 +34,5 @@
 
   <image class='bottomline'></image>
   <image class='photo' src='/images/photo.png' bindtap='chooseImage'></image>
-  <!-- <image class='pic' src='/images/pic.png'></image> -->
 
 </view>
