@@ -9,7 +9,7 @@
   <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="index">
       <swiper-item>
-        <image src="{{item}}" class="slide-image" width="355" height="200" />
+        <image src="{{item}}" class="slide-image" width="355" height="200" bindtap='gotoDetail' />
       </swiper-item>
     </block>
   </swiper>

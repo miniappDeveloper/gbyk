@@ -32,6 +32,12 @@ Page({
     this.setData({
       isShowUserPannel: isShow
     })
+  },
+  //跳转详情页
+  gotoDetail: function() {
+    wx.navigateTo({
+      url: '/pages/pageopen/pageopen',
+    })
   }
 })
 
