@@ -1,0 +1,41 @@
+<!--导航栏  -->
+<view class='navigation'>
+
+  <!--返回按钮  -->
+  <text class="return">返回</text>
+
+  <!--发布消息  -->
+  <text class="publicationtext">发布消息</text>
+
+  <!--发布按钮  -->
+  <text class='publication'>发布</text>
+
+</view>
+
+
+<view class='heading'>
+<text class='title1'>标题（15个字内）</text>
+<image class='line1'></image>
+<!--简介  -->
+<text class='title1'>简介（简单描述一下内容…30字内）</text>
+<image class='line1'></image>
+
+<!--活动时间  -->
+<text class='title1'>活动时间</text>
+<text class='title1'>开始时间</text>
+<text class='title1'>结束时间</text>
+<image class='line1'></image>
+
+<!--活动介绍  -->
+<text class='title1'>活动内容（描述活动的部分，请随便发挥…）</text>
+</view>
+
+
+<!--底部栏  -->
+<view class='bottom'>
+
+<image class='bottomline'></image>
+<image class='photo' src='/images/photo.png'></image>
+<image class='pic' src='/images/pic.png'></image>
+
+</view>

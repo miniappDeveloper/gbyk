@@ -1,0 +1,4 @@
+<!--pages/auth/auth.wxml-->
+<view wx:if="{{!hasUserInfo}}" class='userinfo_auth'>
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>

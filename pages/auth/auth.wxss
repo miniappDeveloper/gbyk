@@ -1,0 +1,17 @@
+/* pages/auth/auth.wxss */
+.userinfo_auth {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+.userinfo_auth > button {
+  position: relative;
+  width: 650rpx;
+  height: 80rpx;
+  top: 50%;
+  margin-top: -40rpx;
+  line-height:80rpx;
+}

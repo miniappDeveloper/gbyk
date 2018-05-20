@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class='header'>
+  <text class='title'>隔壁有坑</text>
+  <image src="{{userInfo.avatarUrl}}"></image>
+</view>
+<!--特别推荐轮播图  -->
+<view class='body'>
+  <text class='title0'>特别推荐</text>
+  <text class='title2'>自媒体小程序</text>
+  <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="200" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--今日联动+第一板块  -->
+<view class='bodytext'>
+  <text class='title0'>Today</text>
+  <text class='title3'>膨胀的小人物</text>
+  <image class="touxiang1" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526060532408&di=2926277b397b1def83e2879ee3a73b24&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dcd1885ce9f16fdfad86cc6e6848d8cea%2F0286f52ac65c103839b4b027b0119313b27e8960.jpg'></image>
+
+  <image class="anniu1" src='/images/anniu.png'></image>
+
+  <view class='desc'>
+    <text class='touxiangbiaoti'>关于小人物的一切</text>
+    <text class='touxiangneirong'>参与即可赠送小编一个兰博鸡尼大卡车，我么你的撒谎的不是。</text>
+  </view>
+
+</view>
+
+<!--第一板块分割线  -->
+<text class='fengexian'></text>
+
+<!--第二板块  -->
+<view class='bodytext2'>
+
+  <text class='title4'>日常奇葩俱乐部</text>
+  <image class="touxiang2" src='http://img3.duitang.com/uploads/item/201501/29/20150129144530_CiJ5Z.jpeg'></image>
+
+  <image class="anniu1" src='/images/anniu.png'></image>
+
+  <view class='desc1'>
+    <text class='touxiangbiaoti2'>小声bb</text>
+    <text class='touxiangneirong2'>卡萨丁就撒娇的考虑到撒到拉萨看见的垃圾打开。</text>
+  </view>
+
+</view>
+
+<!--第二板块分割线  -->
+<text class='fengexian2'></text>
+
+<!--第三板块  -->
+<view class='bodytext3'>
+
+  <text class='title5'>隐形贫穷人口</text>
+  <image class="touxiang3" src='http://www.ld12.com/upimg358/allimg/c141122/141B4400400330-1L564.jpg'></image>
+
+  <image class="anniu1" src='/images/anniu.png'></image>
+
+  <view class='desc2'>
+    <text class='touxiangbiaoti3'>日常装逼小分队</text>
+    <text class='touxiangneirong3'>开心就好</text>
+  </view>
+
+</view>
+
+<!--第三板块分割线  -->
+<text class='fengexian3'></text>

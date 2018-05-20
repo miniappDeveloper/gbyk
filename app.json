@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/join/join",
+    "pages/user/user",
+    "pages/pagepublication/pagepublication",
+    "pages/pageopen/pageopen",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": false
+}
