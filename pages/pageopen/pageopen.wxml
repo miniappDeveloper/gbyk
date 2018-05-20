@@ -36,7 +36,8 @@
 
 <view class='endjojn'>
 
-<image class='join' src='/images/jikecanyu.png'></image>
-<text class='return'> 返回 > </text>
+
+<navigator class='add_symbol' url="/pages/join/join"></navigator>
+<navigator class='backup' open-type="navigateBack">返回</navigator>
 
 </view>

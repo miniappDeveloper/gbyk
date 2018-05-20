@@ -1,3 +1,5 @@
+@import "/pages/template/indexPopup.wxss";
+
 .toutu {
   width: 100%;
   height: 400rpx;
@@ -23,7 +25,6 @@
   margin-top: 50rpx;
   margin-left: 200rpx;
   margin-right: 200rpx;
- 
 }
 
 /*作者  */
@@ -87,29 +88,26 @@
 }
 
 /*endjoin盒子  */
-.endjoin{
+
+.endjoin {
   padding-bottom: 50rpx;
   padding-top: 50rpx;
 }
 
+/*返回  */
 
-/*参与按钮  */
-.join {
-  width: 189rpx;
-  height: 47rpx;
-  margin: 0 auto;
+.return {
+  font-size: 30rpx;
+  text-align: right;
   display: block;
-
+  margin-right: 40rpx;
+  color: #ffd92e;
+  padding-bottom: 50rpx;
+  padding-top: 40rpx;
 }
 
-/*返回  */
-.return{
-font-size: 30rpx;
-text-align: right;
-display: block;
-margin-right: 40rpx;
-color: #FFD92E;
-padding-bottom: 50rpx;
-padding-top: 40rpx;
-
+.backup {
+  display: table;
+  margin: 0 auto;
+  line-height: 100rpx;
 }
