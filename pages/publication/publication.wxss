@@ -17,12 +17,6 @@
   padding-left: 40rpx;
 }
 
-/*发布消息文本 */
-
-.publicationtext {
-  font-size: 30rpx;
-  color: #000;
-}
 
 /*发布消息按钮  */
 

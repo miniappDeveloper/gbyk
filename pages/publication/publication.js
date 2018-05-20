@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    startTime:"",
+    endTime:""
   },
 
   /**
@@ -62,5 +63,21 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+   /**
+   * 设置开始时间
+   */
+  setStartTime: function(e){
+    this.setData({
+      startTime: e.detail.value
+    })
+  },
+   /**
+   * 设置结束时间
+   */
+  setEndTime: function(e){
+    this.setData({
+      endTime: e.detail.value
+    })
   }
 })
