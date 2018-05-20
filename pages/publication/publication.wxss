@@ -5,7 +5,7 @@
 .navigation {
   text-align: center;
   border-bottom: 2rpx solid #e1e1e1;
-  padding-bottom: 20rpx;
+  padding-bottom: 65rpx;
 }
 
 /*返回图片  */
@@ -38,11 +38,16 @@
 
 .title1 {
   font-size: 30rpx;
-  color: #e1e1e1;
+  color: #302F2F;
   padding-left: 40rpx;
   display: block;
   padding-top: 20rpx;
   padding-bottom: 15rpx;
+}
+
+.textcolor{
+  color: #e1e1e1;
+  font-size: 30rpx;
 }
 
 .line1 {

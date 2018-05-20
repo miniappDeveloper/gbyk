@@ -8,14 +8,14 @@
 </view>
 
 <view class='heading'>
-  <input class='title1' placeholder='标题（15个字内）'></input>
+  <input  placeholder-class='textcolor' class='title1' placeholder='标题（15个字内）'></input>
   <image class='line1'></image>
   <!--简介  -->
-  <input class='title1' placeholder='简介（简单描述一下内容…30字内）'></input>
+  <input placeholder-class='textcolor' class='title1' placeholder='简介（简单描述一下内容…30字内）'></input>
   <image class='line1'></image>
 
   <!--活动时间  -->
-  <text class='title1'>活动时间</text>
+  <text  class='title1'>活动时间</text>
   <picker class='title1' mode="date" start="2018-05-20" bindchange="setStartTime">
     开始时间 {{startTime}}
   </picker>
@@ -25,7 +25,7 @@
   <image class='line1'></image>
 
   <!--活动介绍  -->
-  <textarea class='title1' placeholder='活动内容（描述活动的部分，请随便发挥…）'></textarea>
+  <textarea placeholder-class='textcolor' class='title1' placeholder='活动内容（描述活动的部分，请随便发挥…）'></textarea>
 </view>
 
 

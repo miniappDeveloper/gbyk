@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/auth/auth",
-    "pages/publication/publication",
     "pages/join/join",
+    "pages/publication/publication",
     "pages/pageopen/pageopen",
     "pages/index/index",
     "pages/logs/logs",
