@@ -33,7 +33,7 @@
 <view class='bottom'>
 
   <image class='bottomline'></image>
-  <image class='photo' src='/images/photo.png'></image>
-  <image class='pic' src='/images/pic.png'></image>
+  <image class='photo' src='/images/photo.png' bindtap='chooseImage'></image>
+  <!-- <image class='pic' src='/images/pic.png'></image> -->
 
 </view>

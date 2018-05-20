@@ -79,5 +79,13 @@ Page({
     this.setData({
       endTime: e.detail.value
     })
+  },
+  //选择文件
+  chooseImage: function(){
+    wx.chooseImage({
+      success: function(res) {
+        console.log(res)
+      },
+    })
   }
 })
