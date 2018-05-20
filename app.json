@@ -1,17 +1,17 @@
 {
   "pages": [
     "pages/auth/auth",
+    "pages/publication/publication",
     "pages/join/join",
-    "pages/user/user",
-    "pages/pagepublication/pagepublication",
     "pages/pageopen/pageopen",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "隔壁有坑",
     "navigationBarTextStyle": "black"
   },
   "debug": false

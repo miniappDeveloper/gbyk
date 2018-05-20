@@ -1,0 +1,22 @@
+<!--pages/user/user.wxml-->
+<template name="userPannel">
+  <!--用户盒模型  -->
+  <view wx:if="{{isShowUserPannel}}" class='user'>
+    <!--背景  -->
+    <image class='bg' src="/images/bg.png"></image>
+    <!--搜索盒模型  -->
+    <view class='seach'>
+      <!-- 搜索icon -->
+      <image class='sea' src="/images/seach.png"></image>
+      <!--搜索字色  -->
+      <input class='input' placeholder='搜索' placeholder-class='textcolor'></input>
+    </view>
+
+    <!--功能盒模型  -->
+    <view class='function'>
+      <navigator url="/pages/user/user"  class='usercenter'>个人中心</navigator>
+      <navigator url="/pages/publication/publication" class='newscenter'>发布消息</navigator>
+    </view>
+
+  </view>
+</template>

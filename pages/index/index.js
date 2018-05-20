@@ -14,18 +14,24 @@ Page({
     indicatorDots: false,
     autoplay: true,
     interval: 5000,
-    duration: 800
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    duration: 800,
+    isShowUserPannel:false, //是否显示个人中心面板
   },
   onLoad: function () {
     this.setData({
       userInfo: app.getUserinfo()
     })
   },
+  showUserPannel: function(){
+    let isShow = this.data.isShowUserPannel
+    if (!isShow) {
+      isShow = true
+    } else {
+      isShow = false
+    }
+    this.setData({
+      isShowUserPannel: isShow
+    })
+  }
 })
 

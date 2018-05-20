@@ -2,7 +2,7 @@
 <view class='navigation'>
 
   <!--返回按钮  -->
-  <text class="return">返回</text>
+  <navigator open-type="navigateBack" class="return">返回</navigator>
 
   <!--发布消息  -->
   <text class="publicationtext">发布消息</text>

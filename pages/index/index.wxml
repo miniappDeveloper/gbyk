@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class='header'>
   <text class='title'>隔壁有坑</text>
   <image src="{{userInfo.avatarUrl}}"></image>
@@ -8,7 +7,7 @@
   <text class='title0'>特别推荐</text>
   <text class='title2'>自媒体小程序</text>
   <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
       <swiper-item>
         <image src="{{item}}" class="slide-image" width="355" height="200" />
       </swiper-item>
@@ -69,3 +68,8 @@
 
 <!--第三板块分割线  -->
 <text class='fengexian3'></text>
+
+<import src="/pages/template/indexPopup.wxml" /> 
+<template is="userPannel" data="{{isShowUserPannel}}"/>
+<view class='add_symbol' bindtap='showUserPannel'></view>
+<!--index.wxml-->

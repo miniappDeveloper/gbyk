@@ -1,28 +1,3 @@
 <!--pages/user/user.wxml-->
-<!--用户盒模型  -->
-<view class='user'>
-<!--背景  -->
-  <image class='bg' src="/images/bg.png">
-  </image>
-
-<!--搜索盒模型  -->
-  <view class='seach'>
-
-<!-- 搜索icon -->
-    <image class='sea' src="/images/seach.png"></image>
-<!--搜索字色  -->
-    <input class='input' placeholder='搜索' placeholder-class='textcolor'></input>
-
-
-  </view>
-
-<!--功能盒模型  -->
- <view class='function'> 
-
-<view class='usercenter'>个人中心</view>
-<view class='newscenter'>发布消息</view>
-
- </view> 
-
-
-</view>
+<text>这里是个人中心页</text>
+<navigator open-type="navigateBack">返回</navigator>
