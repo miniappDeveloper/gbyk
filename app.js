@@ -4,6 +4,7 @@ const USERINFOKEY = "userinfo";
 
 let app = {
   globalData: {
+    userInfoKey: USERINFOKEY,
     hasUserInfo: !!wx.getStorageSync(USERINFOKEY), //是否获取用户信息成功标志
     userInfo: wx.getStorageSync(USERINFOKEY), //用户信息
   },

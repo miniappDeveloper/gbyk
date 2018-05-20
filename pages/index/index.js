@@ -23,9 +23,7 @@ Page({
     })
   },
   onLoad: function () {
-    console.log(this.userInfo)
-    console.log(this.hasUserInfo)
-    console.log(wx.getStorageSync(USERINFOKEY))
+    console.log(wx.getStorageSync(app.globalData.userInfoKey))
   },
 })
 
