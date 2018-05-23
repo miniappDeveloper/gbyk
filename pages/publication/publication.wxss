@@ -84,13 +84,3 @@
   padding-top: 8rpx;
   float: right;
 }
-
-/*图片图标  */
-
-.pic {
-  width: 55rpx;
-  height: 55rpx;
-  padding-right: 20rpx;
-  padding-top: 8rpx;
-  float: right;
-}
