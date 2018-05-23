@@ -1,1 +1,112 @@
 /* pages/user/user.wxss */
+
+/*虚化背景  */
+
+.bg {
+  width: 750rpx;
+  height: 1100rpx;
+  position: absolute;
+}
+
+/*头部盒模型  */
+
+.head {
+  width: 100%;
+  display: block;
+  position: absolute;
+  padding-top: 50rpx;
+}
+
+/*头部照片  */
+
+.headphoto {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: relative;
+  top: 10rpx;
+  left: 300rpx;
+  z-index: 0;
+  /* box-shadow: 0px 5px 2px #888888; */
+}
+
+/*相机背景  */
+
+.photobg {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #ffd92e;
+  position: relative;
+  border-radius: 50%;
+  top: -45rpx;
+  left: 400rpx;
+  z-index: 1;
+}
+
+/*相机icon  */
+
+.camera {
+  width: 26rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12rpx;
+  margin-left: -13rpx;
+  z-index: 1;
+}
+
+/*基本信息  */
+
+.basic {
+  position: absolute;
+  padding-top: 279rpx;
+  padding-left: 40px;
+  display: block;
+  padding-right: 80rpx;
+  width: 100%;
+}
+
+/*信息文本  */
+
+.basictext {
+  font-size: 30rpx;
+  color: #828282;
+  display: block;
+}
+
+.namebox {
+  width: 100%;
+  height: 60rpx;
+  border-bottom: 1rpx solid #828282;
+  margin-top: 30rpx;
+  padding-bottom: 70rpx;
+}
+
+.name {
+  font-size: 33rpx;
+  color: #2f2f2f;
+  float: left;
+}
+
+.nametext {
+  font-size: 33rpx;
+  color: #828282;
+  float: right;
+  padding-right: 25rpx;
+}
+
+.nameicon {
+  width: 18rpx;
+  height: 32rpx;
+  float: right;
+  padding-top: 8rpx;
+  padding-right: 5rpx;
+}
+
+.back {
+  font-size: 50rpx;
+  color: #ffd92e;
+  display: block;
+  
+}

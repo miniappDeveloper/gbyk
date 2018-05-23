@@ -106,8 +106,8 @@
   padding-top: 40rpx;
 }
 
-.backup {
+/* .backup {
   display: table;
   margin: 0 auto;
   line-height: 100rpx;
-}
+} */

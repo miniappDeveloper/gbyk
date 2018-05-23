@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-view {
+view, text {
   box-sizing: border-box;
 }
 

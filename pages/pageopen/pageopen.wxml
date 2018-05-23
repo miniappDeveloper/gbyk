@@ -38,6 +38,6 @@
 
 
 <navigator class='add_symbol' url="/pages/join/join"></navigator>
-<navigator class='backup' open-type="navigateBack">返回</navigator>
+ <!-- <navigator class='backup' open-type="navigateBack">返回</navigator>  -->
 
 </view>

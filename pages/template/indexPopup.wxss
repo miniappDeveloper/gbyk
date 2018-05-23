@@ -7,8 +7,10 @@
   position: fixed;
   z-index: 9;
   border-radius: 50%;
-  bottom: 30rpx;
-  right: 30rpx;
+  bottom: 35rpx;
+  right: 35rpx;
+  box-shadow:2px 1px 2px #888888;
+  
 }
 .add_symbol::before, .add_symbol::after{
   content: "";

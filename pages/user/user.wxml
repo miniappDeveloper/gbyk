@@ -1,3 +1,56 @@
 <!--pages/user/user.wxml-->
-<text>这里是个人中心页</text>
-<navigator open-type="navigateBack">返回</navigator>
+  
+<view class='usercenter'>
+<image class='bg' src='/images/bg.png'></image>
+
+<view class='head'>
+<image class ='headphoto' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527012622367&di=9b38557da3add3f472507b185509dca5&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201504%2F16%2F20150416H4223_mQCGe.jpeg'></image>
+<view class='photobg'>
+<image class='camera' src='/images/camera.png'></image></view>
+</view>
+</view>
+
+<!--基本信息盒模型  -->
+<view class='basic'>
+<text class='basictext'>基本信息</text>
+
+<!--名字部分  -->
+<view class='namebox'>
+<text class='name'>名字</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>皮一下</text></view>
+
+<!--手机号部分  -->
+<view class='namebox'>
+<text class='name'>手机号</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>18801233451</text></view>
+
+<!--微博昵称  -->
+<view class='namebox'>
+<text class='name'>微博昵称</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>我叫刘二三</text></view>
+
+<!--粉丝数  -->
+<view class='namebox'>
+<text class='name'>粉丝数</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>12900</text></view>
+
+<!--擅长领域  -->
+<view class='namebox'>
+<text class='name'>擅长领域</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>电影</text></view>
+
+<!--微博状态  -->
+<view class='namebox'>
+<text class='name'>微博状态</text>
+<image class='nameicon' src='/images/righticon.png'></image>
+<text class='nametext'>橙V</text></view>
+
+</view>
+
+
+<navigator class='back' open-type="navigateBack">返回</navigator>

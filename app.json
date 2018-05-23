@@ -5,8 +5,8 @@
     "pages/publication/publication",
     "pages/pageopen/pageopen",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
