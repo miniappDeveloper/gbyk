@@ -5,7 +5,7 @@
 <!--特别推荐轮播图  -->
 <view class='body'>
   <text class='title0'>特别推荐</text>
-  <text class='title2'>一个很牛逼的小程序</text>
+  <text class='title2'>打不过我吧，哈哈哈哈哈哈</text>
   <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="index">
       <swiper-item>
@@ -75,55 +75,64 @@
 
 <view class='projectbox'>
   <text class='headingtext'>Today</text>
- <!--第一部分  -->
+  <!--第一部分  -->
   <view class='project'>
-    <image class='headimage' src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif'></image>
-    <view class='projecttext'>
-      <text class='biaoti'>膨胀的小人物</text>
-      <text class='jianjie'>用文字的力量，改变潮水的方向</text>
-      <text class='field'>电影 10W+参与</text>
-    </view>
-
-    <view class='openpush'></view>
+      <image class='headimage' src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif'></image>
+      <view class='projecttext'>
+        <text class='biaoti'>膨胀的小人物</text>
+        <text class='jianjie'>用文字的力量，改变潮水的方向</text>
+        <text class='field'>电影 10W+参与</text>
+      </view>
+<navigator url='/pages/pageopen/pageopen'>
+      <view class='openpush'></view>
+    </navigator>
   </view>
 
-<!--第二部分  -->
+  <!--第二部分  -->
 
- <view class='project'>
+  <view class='project'>
+    
     <image class='headimage' src='http://img.zcool.cn/community/0130175b0259daa801209a85281b8a.gif'></image>
     <view class='projecttext'>
       <text class='biaoti'>日常装逼小分队</text>
       <text class='jianjie'>复眼的世界，在平行世界的寻找人的另一个面</text>
       <text class='field'>亚文化 1W+参与</text>
     </view>
-
+<navigator url='/pages/pageopen/pageopen'>
     <view class='openpush'></view>
+     </navigator>
   </view>
 
-<!--第三部分  -->
-<view class='project'>
+  <!--第三部分  -->
+  <view class='project'>
+  
     <image class='headimage' src='http://img.zcool.cn/community/0110005b025a18a801218cf420ede5.gif'></image>
     <view class='projecttext'>
       <text class='biaoti'>差评日报</text>
       <text class='jianjie'>这个世界上终究会有好事发生</text>
       <text class='field'>电商 1W+参与</text>
     </view>
-
-     <view class='openpush'></view> 
+<navigator url='/pages/pageopen/pageopen'>
+    <view class='openpush'></view>
+    </navigator>
   </view>
 
-<!--第四部分  -->
+  <!--第四部分  -->
 
-<view class='project'>
+  <view class='project'>
+  
     <image class='headimage' src='http://img.zcool.cn/community/0108625b025a04a801218cf4270881.gif'></image>
     <view class='projecttext'>
       <text class='biaoti'>刘二三</text>
       <text class='jianjie'>每个人都有自己的故事</text>
       <text class='field'>情感 1W+参与</text>
     </view>
-
+<navigator url='/pages/pageopen/pageopen'>
     <view class='openpush'></view>
+    </navigator>
   </view>
+
+
 
 
 </view>

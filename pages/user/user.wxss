@@ -2,19 +2,24 @@
 
 /*虚化背景  */
 
+page {
+  min-height: 100vh;
+  position: relative;
+}
+
 .bg {
   width: 750rpx;
-  height: 1100rpx;
+  height: 100%;
   position: absolute;
 }
 
 /*头部盒模型  */
 
 .head {
-  width: 100%;
-  display: block;
-  position: absolute;
+  display: table;
+  position: relative;
   padding-top: 50rpx;
+  margin: 0 auto;
 }
 
 /*头部照片  */
@@ -23,10 +28,6 @@
   width: 150rpx;
   height: 150rpx;
   border-radius: 50%;
-  position: relative;
-  top: 10rpx;
-  left: 300rpx;
-  z-index: 0;
   /* box-shadow: 0px 5px 2px #888888; */
 }
 
@@ -36,11 +37,10 @@
   width: 50rpx;
   height: 50rpx;
   background-color: #ffd92e;
-  position: relative;
+  position: absolute;
   border-radius: 50%;
-  top: -45rpx;
-  left: 400rpx;
-  z-index: 1;
+  top: 142rpx;
+  right: -2px;
 }
 
 /*相机icon  */
@@ -59,12 +59,11 @@
 /*基本信息  */
 
 .basic {
-  position: absolute;
-  padding-top: 279rpx;
-  padding-left: 40px;
+  padding-left: 20px;
   display: block;
-  padding-right: 80rpx;
+  padding-right: 40rpx;
   width: 100%;
+  margin-top: 70rpx;
 }
 
 /*信息文本  */
@@ -94,6 +93,27 @@
   color: #828282;
   float: right;
   padding-right: 25rpx;
+  text-align: right;
+}
+
+.mode {
+  position: relative;
+  z-index: 1;
+  font-size: 33rpx;
+  color: #828282;
+  float: right;
+  padding-right: 25rpx;
+  text-align: right;
+}
+
+.field{
+  position: relative;
+  z-index: 1;
+  font-size: 33rpx;
+  color: #828282;
+  float: right;
+  padding-right: 25rpx;
+  text-align: right;
 }
 
 .nameicon {
@@ -105,8 +125,18 @@
 }
 
 .back {
-  font-size: 50rpx;
+  font-size: 30rpx;
   color: #ffd92e;
   display: block;
-  
+  text-align: center;
+  line-height: 70rpx;
+  width: 130rpx;
+  height: 70rpx;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3rpx solid #ffd92e;
+  border-radius: 25rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -65rpx;
+  bottom: 70rpx;
 }
