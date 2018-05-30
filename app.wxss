@@ -1,15 +1,10 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+view,text,article,audio,button,canvas,footer,h1,h2,h3,h4,h5,h6,header,html,image,input,menu,map,nav,option,section,select,span,strong,table,thead,tbody,td,textarea,ul,video{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-view, text {
-  box-sizing: border-box;
+  font-family: "DINPro", "PingFang SC", "Noto SansCJK","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
 

@@ -1,138 +1,54 @@
-<view class='header'>
-  <text class='title'>隔壁有坑</text>
-  <image src="{{userInfo.avatarUrl}}"></image>
+<view class='container header'>
+  <text class='headere_title'>隔壁有坑</text>
+  <image src="{{userInfo.avatarUrl}}" mode='aspectFill'></image>
 </view>
-<!--特别推荐轮播图  -->
-<view class='body'>
-  <text class='title0'>特别推荐</text>
-  <text class='title2'>打不过我吧，哈哈哈哈哈哈</text>
-  <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}" wx:key="index">
-      <swiper-item>
-        <image mode='aspectFill' src="{{item}}" class="slide-image" width="355" height="200" bindtap='gotoDetail' />
+
+<view class='container slider'>
+  <text class='slider_title'>特别推荐</text>
+  <text class='slider_desc'>打不过我吧，哈哈哈哈哈哈</text>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+        <image mode='aspectFill' src="{{item}}" bindtap='gotoDetail' />
       </swiper-item>
-    </block>
   </swiper>
 </view>
 
-<!--今日联动+第一板块  -->
-<!-- <view class='bodytext'>
-  <text class='title0'>Today</text>
-  <text class='title3'>膨胀的小人物</text>
-  <image class="touxiang1" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526060532408&di=2926277b397b1def83e2879ee3a73b24&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dcd1885ce9f16fdfad86cc6e6848d8cea%2F0286f52ac65c103839b4b027b0119313b27e8960.jpg'></image>
-
-  <image class="anniu1" src='/images/anniu.png'></image>
-
-  <view class='desc'>
-    <text class='touxiangbiaoti'>关于小人物的一切</text>
-    <text class='touxiangneirong'>参与即可赠送小编一个兰博鸡尼大卡车，我么你的撒谎的不是。</text>
+<view class='container content'>
+  <text class='content_title'>Today</text>
+  <view class='content_item'>
+    <image src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif' mode='aspectFill'></image>
+    <view class='context'>
+      <text class='context_title'>膨胀的小人物</text>
+      <text class='context_desc'>用文字的力量，改变潮水的方向</text>
+      <text class='context_total'>电影 10W+参与</text>
+    </view>
   </view>
-
-</view> -->
-
-<!--第一板块分割线  -->
-<!-- <text class='fengexian'></text> -->
-
-<!--第二板块  -->
-<!-- <view class='bodytext2'>
-
-  <text class='title4'>日常奇葩俱乐部</text>
-  <image class="touxiang2" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526060532408&di=2926277b397b1def83e2879ee3a73b24&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dcd1885ce9f16fdfad86cc6e6848d8cea%2F0286f52ac65c103839b4b027b0119313b27e8960.jpg'></image>
-
-  <image class="anniu1" src='/images/anniu.png'></image>
-
-  <view class='desc1'>
-    <text class='touxiangbiaoti2'>小声bb</text>
-    <text class='touxiangneirong2'>卡萨丁就撒娇的考虑到撒到拉萨看见的垃圾打开。</text>
+  <view class='content_item'>
+    <image src='http://img.zcool.cn/community/0130175b0259daa801209a85281b8a.gif' mode='aspectFill'></image>
+    <view class='context'>
+      <text class='context_title'>日常装逼小分队</text>
+      <text class='context_desc'>复眼的世界，在平行世界的寻找人的另一个面复眼的世界，在平行世界的寻找人的另一个面复眼的世界，在平行世界的寻找人的另一个面</text>
+      <text class='context_total'>亚文化 1W+参与</text>
+    </view>
   </view>
-
-</view> -->
-
-<!--第二板块分割线  -->
-<!-- <text class='fengexian2'></text> -->
-
-<!--第三板块  -->
-<!-- <view class='bodytext3'>
-
-  <text class='title5'>隐形贫穷人口</text>
-  <image class="touxiang3" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526060532408&di=2926277b397b1def83e2879ee3a73b24&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dcd1885ce9f16fdfad86cc6e6848d8cea%2F0286f52ac65c103839b4b027b0119313b27e8960.jpg'></image>
-
-  <image class="anniu1" src='/images/anniu.png'></image>
-
-  <view class='desc2'>
-    <text class='touxiangbiaoti3'>日常装逼小分队</text>
-    <text class='touxiangneirong3'>开心就好</text>
+  <view class='content_item'>
+    <image src='http://img.zcool.cn/community/0110005b025a18a801218cf420ede5.gif' mode='aspectFill'></image>
+    <view class='context'>
+      <text class='context_title'>差评日报</text>
+      <text class='context_desc'>这个世界上终究会有好事发生</text>
+      <text class='context_total'>电商 1W+参与</text>
+    </view>
   </view>
-
-</view> -->
-
-<!--第三板块分割线  -->
-<!-- <text class='fengexian3'></text> -->
+  <view class='content_item'>
+    <image src='http://img.zcool.cn/community/0108625b025a04a801218cf4270881.gif' mode='aspectFill'></image>
+    <view class='context'>
+      <text class='context_title'>刘二三</text>
+      <text class='context_desc'>每个人都有自己的故事</text>
+      <text class='context_total'>情感 1W+参与</text>
+    </view>
+  </view>
+</view>
 
 <import src="/pages/template/indexPopup.wxml" />
 <template is="userPannel" data="{{isShowUserPannel}}" />
 <view class='add_symbol' bindtap='showUserPannel'></view>
-
-<view class='projectbox'>
-  <text class='headingtext'>Today</text>
-  <!--第一部分  -->
-  <view class='project'>
-      <image class='headimage' src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif'></image>
-      <view class='projecttext'>
-        <text class='biaoti'>膨胀的小人物</text>
-        <text class='jianjie'>用文字的力量，改变潮水的方向</text>
-        <text class='field'>电影 10W+参与</text>
-      </view>
-<navigator url='/pages/pageopen/pageopen'>
-      <view class='openpush'></view>
-    </navigator>
-  </view>
-
-  <!--第二部分  -->
-
-  <view class='project'>
-    
-    <image class='headimage' src='http://img.zcool.cn/community/0130175b0259daa801209a85281b8a.gif'></image>
-    <view class='projecttext'>
-      <text class='biaoti'>日常装逼小分队</text>
-      <text class='jianjie'>复眼的世界，在平行世界的寻找人的另一个面</text>
-      <text class='field'>亚文化 1W+参与</text>
-    </view>
-<navigator url='/pages/pageopen/pageopen'>
-    <view class='openpush'></view>
-     </navigator>
-  </view>
-
-  <!--第三部分  -->
-  <view class='project'>
-  
-    <image class='headimage' src='http://img.zcool.cn/community/0110005b025a18a801218cf420ede5.gif'></image>
-    <view class='projecttext'>
-      <text class='biaoti'>差评日报</text>
-      <text class='jianjie'>这个世界上终究会有好事发生</text>
-      <text class='field'>电商 1W+参与</text>
-    </view>
-<navigator url='/pages/pageopen/pageopen'>
-    <view class='openpush'></view>
-    </navigator>
-  </view>
-
-  <!--第四部分  -->
-
-  <view class='project'>
-  
-    <image class='headimage' src='http://img.zcool.cn/community/0108625b025a04a801218cf4270881.gif'></image>
-    <view class='projecttext'>
-      <text class='biaoti'>刘二三</text>
-      <text class='jianjie'>每个人都有自己的故事</text>
-      <text class='field'>情感 1W+参与</text>
-    </view>
-<navigator url='/pages/pageopen/pageopen'>
-    <view class='openpush'></view>
-    </navigator>
-  </view>
-
-
-
-
-</view>

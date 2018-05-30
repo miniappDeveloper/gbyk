@@ -18,8 +18,11 @@ let app = {
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        // console.log(res)
       }
     })
+
+    //用户授权过，获取用户信息
   },
   //获取用户信息
   setUserinfo: function (e) {
