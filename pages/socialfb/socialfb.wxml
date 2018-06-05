@@ -1,0 +1,15 @@
+<!--导航盒模型  -->
+<view class='dh'>
+<!--取消  -->
+<text class='qx'>取消</text>
+<!--发送  -->
+<text class='fs'>发送</text>
+</view>
+
+<view class='fengexian'></view>
+
+<!-- <input placeholder-class='textcolor' class='srk' placeholder='分享你的观点...ヽ(･ω･´ﾒ)'></input> -->
+
+<textarea placeholder-class='textcolor' class='srk' placeholder='分享你的观点...ヽ(･ω･´ﾒ)'></textarea>
+
+<image class='pic' src='/images/pic.png' bindtap='chooseImage'></image>

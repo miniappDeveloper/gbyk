@@ -1,0 +1,62 @@
+<!--pages/social/social.wxml-->
+<!--头部导航栏  -->
+<view class='head'>
+  <!--类别  -->
+  <image class='category' src='/images/category.png'></image>
+  <!--文案  -->
+  <text class='headname'>获取微信昵称</text>
+  <!--三角形  -->
+  <!-- <image class='triangle' src='/images/Triangle.png'></image> -->
+  <!--搜索  -->
+  <image class='seoimg' src='/images/seo.png'></image>
+</view>
+
+
+<!--轮播图  -->
+<view class='body'>
+  <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image mode='aspectFill' src="{{item}}" class="slide-image" width="355" height="200" bindtap='gotoDetail' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <text class='title0'>热点星球</text>
+  <text class='title2'>打不过我吧，哈哈哈哈哈哈</text>
+</view>
+
+<!--分割线  -->
+<view class='bx'></view>
+
+<!--评论区板块  -->
+<view class='projectbox'>
+  <!--第一部分  -->
+  <view class='project'>
+      <image class='headimage' src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif'></image>
+      <view class='projecttext'>
+        <text class='biaoti'>刘二三</text>
+        <text class='jianjie'>2018.06.03</text>
+      </view>
+
+      <!--文本盒模型  -->
+      <view class='usertext'>
+      <text class='text'>苹果作为全球最大的软件公司之一，如何让自己的核心系统保持长久的竞争力，这是我们一直以来都在关心和关注的。</text>
+      <!--点赞评论行为盒模型  -->
+      <view class='picxw'>
+      <!--评论  -->
+      <image class='pinglun' src='/images/pl-1.png'></image>
+      <!--点赞  -->
+      <image class='dianzan' src='/images/zan-1.png'></image>
+      <text class='zanbum'>5</text>
+      
+      </view>
+
+      <!--分割线  -->
+<view class='pinglunqufgx'></view>
+      
+      </view>
+
+
+  </view>
+
+</view>

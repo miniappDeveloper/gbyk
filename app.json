@@ -1,6 +1,8 @@
 {
   "pages": [
-    
+    "pages/socialfb/socialfb",
+    "pages/social/social",
+    "pages/home/home",
     "pages/auth/auth",
     "pages/join/join",
     "pages/publication/publication",

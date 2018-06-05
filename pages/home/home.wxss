@@ -1,0 +1,178 @@
+/* pages/home/hong'me.wxss */
+
+/*头部导航栏  */
+
+.head {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+/*类别  */
+
+.category {
+  width: 35rpx;
+  height: 29.14rpx;
+}
+
+/*头部昵称  */
+
+.headname {
+  font-size: 33rpx;
+  color: #515151;
+  margin-left: 27rpx;
+}
+
+/*三角形  */
+
+.triangle {
+  width: 18rpx;
+  height: 15rpx;
+  margin-left: 20rpx;
+  transform: rotate(180deg);
+  padding-top: 7rpx;
+}
+
+.seoimg {
+  width: 35rpx;
+  height: 35.09rpx;
+  float: right;
+  padding-top: 5rpx;
+}
+
+/*卡片盒模型  */
+
+.cardhead {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+}
+
+/*卡片  */
+
+.card {
+}
+
+/*背景图  */
+.picimg {
+  width: 670rpx;
+  height: 810rpx;
+  background-attachment: no-repeat scroll transparent;
+  box-shadow: 0rpx 25rpx 50rpx #b7b7b7;
+  border-radius: 45rpx;
+}
+
+/*用户头像  */
+
+.usertx {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50rpx;
+  position: absolute;
+  top: 102rpx;
+  left: 40rpx;
+  margin-left: 70rpx;
+  margin-top: 50rpx;
+  /* border: 5rpx solid #fff; */
+}
+
+/*发布者盒子  */
+
+.user {
+  width: 350rpx;
+  height: 90rpx;
+  position: absolute;
+  top: 150rpx;
+  left: 220rpx;
+  z-index: 0;
+}
+
+/*发布者昵称  */
+
+.usertext {
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.userjj {
+  font-size: 20rpx;
+  color: #515151;
+  display: block;
+}
+
+/* 关注  */
+
+.usergz {
+  width: 90rpx;
+  height: 90rpx;
+  float: right;
+  padding-top: 50rpx;
+  padding-right: 70rpx;
+  position: absolute;
+  top: 102rpx;
+  right: 40rpx;
+}
+
+/*内容盒模型  */
+
+.text {
+  margin-top: 60rpx;
+  margin-left: 120rpx;
+  margin-right: 120rpx;
+  position: absolute;
+  top: 290rpx;
+  left: 0rpx;
+}
+
+.biaoti {
+  font-size: 50rpx;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.jianjie {
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding-top: 20rpx;
+}
+
+.fenxiang {
+  width: 70rpx;
+  height: 70rpx;
+  margin-bottom: 13rpx;
+  margin-top: 240rpx;
+  margin-left: 67rpx;
+}
+
+.qianjinimg {
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 51rpx;
+}
+
+.dianzanimg {
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 51rpx;
+  margin-bottom: 13rpx;
+}
+
+/*时间标注  */
+
+.time {
+  padding-top: 50rpx;
+  padding-left: 50rpx;
+  padding-bottom: 10rpx;
+}
+
+/*时间数字  */
+
+.timenum {
+  font-size: 33rpx;
+  color: #515151;
+  letter-spacing: 0rpx;
+  font-weight: 900;
+}
