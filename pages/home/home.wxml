@@ -15,7 +15,7 @@
 <view class='cardhead'>
   <!--卡片  -->
   <view class='card'>
-  <image class='picimg' src='https://img.zcool.cn/community/019be65af93f81a801207ab49a6d36.jpg@1280w_1l_2o_100sh.jpg'></image>
+  <image class='picimg' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528193963694&di=bda350b0b57570c878f7b74b85848a42&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D68acbb134136acaf4ded9ebf14b0e765%2F2fdda3cc7cd98d10a2aaf41b2b3fb80e7bec909a.jpg'></image>
     <!--用户头像  -->
     <image class='usertx' src="https://tvax3.sinaimg.cn/crop.0.0.1125.1125.180/ac747eb3ly8fra7a7buswj20v90v9gm2.jpg"></image>
     <!--发布者昵称  -->
