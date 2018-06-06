@@ -69,6 +69,7 @@ Page({
   onShareAppMessage: function () {
   
   },
+  //获取用户信息
   bindGetUserInfo: function (e) {
     app.setUserinfo(e)
   }
