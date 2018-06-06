@@ -1,13 +1,11 @@
-// pages/home/hong'me.js
+//  .js
 Page({
-  
 
   /**
    * 页面的初始数据
    */
   data: {
-      userInfo: wx.getStorageSync(app.globalData.userInfoKey),
-      hasUserInfo: app.globalData.hasUserInfo,
+  
   },
 
   /**
@@ -62,10 +60,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  fenxiang: function () {
-    return {
-      title: '微信小程序联盟',
-      desc: '最具人气的小程序开发联盟!',
-      path: '/page/user?id=123'
+  onShareAppMessage: function () {
+  
   }
 })

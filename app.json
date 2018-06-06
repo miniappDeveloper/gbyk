@@ -1,14 +1,15 @@
 {
   "pages": [
-    "pages/home/home",
+    
     "pages/auth/auth",
+    "pages/socialfb/socialfb",
     "pages/join/join",
     "pages/publication/publication",
     "pages/pageopen/pageopen",
     "pages/index/index",
-    "pages/user/user",
-    "pages/socialfb/socialfb",
+    " ",
     "pages/social/social",
+    "pages/home/home",
     "pages/logs/logs"
   ],
   "window": {

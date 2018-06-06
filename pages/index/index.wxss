@@ -25,7 +25,7 @@
 /*隔壁有坑文字属性  */
 
 .header > text {
-  color: #f75016;
+  color: #ffd92e;
   font-size: 60rpx;
   font-weight: 900;
   padding-left: 24rpx;

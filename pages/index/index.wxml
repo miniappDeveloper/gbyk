@@ -1,5 +1,5 @@
 <view class='header'>
-  <text class='title'>隔壁有坑</text>
+  <text class='title'>麻瓜实验室</text>
   <image src="{{userInfo.avatarUrl}}"></image>
 </view>
 <!--特别推荐轮播图  -->
