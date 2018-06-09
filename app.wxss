@@ -1,5 +1,5 @@
 /**app.wxss**/
-view,text,article,audio,button,canvas,footer,h1,h2,h3,h4,h5,h6,header,html,image,input,menu,map,nav,option,section,select,span,strong,table,thead,tbody,td,textarea,ul,video{
+view,text,scroll-view,swiper,movable-view,cover-view,icon,rich-text,progress,button,form,picker,slider,switch, textarea,navigator,image,audio,video{
   border: 0;
   margin: 0;
   padding: 0;
@@ -7,4 +7,3 @@ view,text,article,audio,button,canvas,footer,h1,h2,h3,h4,h5,h6,header,html,image
   box-sizing: border-box;
   font-family: "DINPro", "PingFang SC", "Noto SansCJK","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
-

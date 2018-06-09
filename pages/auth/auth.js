@@ -1,76 +1,51 @@
 // pages/auth/auth.js
-let app = getApp()
-Page({
+import {
+  con,
+  util
+} from '../../utils/factory.js'
 
-  /**
-   * 页面的初始数据
-   */
+let page = {
   data: {
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    hasUserInfo: app.globalData.hasUserInfo
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-    if (app.globalData.hasUserInfo) {
-      wx.reLaunch({
-        url: "/pages/index/index",
-      })
+    wx.getSetting({
+      success: function (res) {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: function (res) {
+              // console.log(res)
+              page.setUserinfoToStorage(res.userInfo)
+            },
+            fail: function (fail) {
+              console.error("Get userinfo error:", err)
+            }
+          })
+        }
+      }
+    })
+  },
+  bindGetUserInfo: function (e) {
+    if (!e.detail.userInfo) {
+      console.log(e.detail.errMsg);
+    } else {
+      page.setUserinfoToStorage(e.detail.userInfo);
     }
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  },
-  //获取用户信息
-  bindGetUserInfo: function (e) {
-    app.setUserinfo(e)
+  setUserinfoToStorage: function (userInfo) {
+    util.setStorage(con.USERINFOSTORAGE, {
+      data: userInfo,
+      success: function (data) {
+        wx.navigateTo({
+          url: '/pages/index/index',
+        })
+      },
+      error: function (err) {
+        console.error(err)
+      }
+    })
   }
-})
+}
+
+Page(page)

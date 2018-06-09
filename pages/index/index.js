@@ -1,43 +1,66 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
+// pages/index/index.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    userInfo: wx.getStorageSync(app.globalData.userInfoKey),
-    hasUserInfo: app.globalData.hasUserInfo,
-    imgUrls: [
-      'http://img.zcool.cn/community/011d455af2e4c7a80121604526b480.jpg@1280w_1l_2o_100sh.jpg',
-      'http://img.zcool.cn/community/01e1285acc8650a8012138675ab2a2.jpg@1280w_1l_2o_100sh.jpg',
-      'http://img.zcool.cn/community/01756b5add7e92a80120927b3af0d8.jpg@1280w_1l_2o_100sh.jpg'
-    ],
-    indicatorDots: false,
-    autoplay: true,
-    interval: 5000,
-    duration: 800,
-    isShowUserPannel:false, //是否显示个人中心面板
+  
   },
-  onLoad: function () {
-    this.setData({
-      userInfo: app.getUserinfo()
-    })
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+  
   },
-  showUserPannel: function(){
-    let isShow = this.data.isShowUserPannel
-    if (!isShow) {
-      isShow = true
-    } else {
-      isShow = false
-    }
-    this.setData({
-      isShowUserPannel: isShow
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
   },
-  //跳转详情页
-  gotoDetail: function() {
-    wx.navigateTo({
-      url: '/pages/pageopen/pageopen',
-    })
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
   }
 })
-

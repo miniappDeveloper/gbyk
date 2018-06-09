@@ -1,54 +1,7 @@
-
-<view class='container header'>
-  <text class='headere_title'>隔壁有坑</text>
-  <image src="{{userInfo.avatarUrl}}" mode='aspectFill'></image>
-</view>
-
-<view class='container slider'>
-  <text class='slider_title'>特别推荐</text>
-  <text class='slider_desc'>打不过我吧，哈哈哈哈哈哈</text>
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
-      <swiper-item wx:for="{{imgUrls}}" wx:key="index">
-        <image mode='aspectFill' src="{{item}}" bindtap='gotoDetail' />
-      </swiper-item>
-  </swiper>
-</view>
-
-<view class='container content'>
-  <text class='content_title'>Today</text>
-  <view class='content_item'>
-    <image src='http://img.zcool.cn/community/01ca005b02587ba801218cf4fe698a.gif' mode='aspectFill'></image>
-    <view class='context'>
-      <text class='context_title'>膨胀的小人物</text>
-      <text class='context_desc'>用文字的力量，改变潮水的方向</text>
-      <text class='context_total'>电影 10W+参与</text>
-    </view>
-  </view>
-  <view class='content_item'>
-    <image src='http://img.zcool.cn/community/0130175b0259daa801209a85281b8a.gif' mode='aspectFill'></image>
-    <view class='context'>
-      <text class='context_title'>日常装逼小分队</text>
-      <text class='context_desc'>复眼的世界，在平行世界的寻找人的另一个面复眼的世界，在平行世界的寻找人的另一个面复眼的世界，在平行世界的寻找人的另一个面</text>
-      <text class='context_total'>亚文化 1W+参与</text>
-    </view>
-  </view>
-  <view class='content_item'>
-    <image src='http://img.zcool.cn/community/0110005b025a18a801218cf420ede5.gif' mode='aspectFill'></image>
-    <view class='context'>
-      <text class='context_title'>差评日报</text>
-      <text class='context_desc'>这个世界上终究会有好事发生</text>
-      <text class='context_total'>电商 1W+参与</text>
-    </view>
-  </view>
-  <view class='content_item'>
-    <image src='http://img.zcool.cn/community/0108625b025a04a801218cf4270881.gif' mode='aspectFill'></image>
-    <view class='context'>
-      <text class='context_title'>刘二三</text>
-      <text class='context_desc'>每个人都有自己的故事</text>
-      <text class='context_total'>情感 1W+参与</text>
-    </view>
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='card_item'>
+    <image src="" mode='aspectFit'></image>
+    <view class='userinfo'></view>
   </view>
 </view>
-<import src="/pages/template/indexPopup.wxml" />
-<template is="userPannel" data="{{isShowUserPannel}}" />
-<view class='add_symbol' bindtap='showUserPannel'></view>

@@ -1,5 +1,3 @@
 <!--pages/auth/auth.wxml-->
-<view wx:if="{{!hasUserInfo}}" class='userinfo_auth'>
-  <image src='/images/bg.png'></image>
-  <button wx:if="{{canIUse}}" open-type="getUserInfo" plain='true' bindgetuserinfo="bindGetUserInfo">登录</button>
-</view>
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
